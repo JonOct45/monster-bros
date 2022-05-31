@@ -1,0 +1,7 @@
+.history{
+    background-color: blueviolet;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}

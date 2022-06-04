@@ -1,0 +1,7 @@
+.characters{
+    display: flex;
+    
+    justify-content: space-between;
+    margin: 0 auto;
+    background-color: rgb(200, 104, 45);
+}

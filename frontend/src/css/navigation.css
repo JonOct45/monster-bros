@@ -1,7 +1,37 @@
-div{
+.figure-head {
+    background-color: rgb(208, 58, 24);
+    border-radius: 7rem;
+}
+
+h1,h2,h3,h4 {
+    font-family: 'Open Sans', Sans-Serif;
+}
+
+p {
+    max-width: 55rem;
+}
+
+header {
     display: flex;
-    line-height: 200px;
-    text-align: center;
-    width: 100%;
-    flex-direction: column;
+    padding: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background: white;
+}
+nav { 
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 16px;
+    padding: 1rem
+   
+}
+nav > a {
+    text-decoration: none;
+
+}
+nav > a:hover {
+    color: brown;
 }

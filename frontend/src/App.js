@@ -1,4 +1,4 @@
-
+import React from 'react';
 import {ResponsiveAppBar}from './navigation';
 import {History} from './history';
 import { Characters } from './characters';

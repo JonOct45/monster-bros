@@ -1,29 +1,40 @@
 
+import React from 'react';
 import Avatar from '@mui/material/Avatar';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import { useState, useEffect } from 'react';
+import { Container } from '@mui/material';
 
 import "./css/characters.css";
 import characters from './characterList';
 
 
 export function Characters() {
-    const [character, selectCharacter] = useState('Testing')
+    const [character, selectCharacter] = useState(characters['GroupPhoto']);
 
 
     return (
         <div className="characters">
             <section className="characters-section">
             <h1>Characters</h1>
-        <Box sx={{
+        <Box  id='characters' 
+        sx={{
             display: 'flex',
-            justifyContent: 'center',
+            justifyContent: 'left',
             alignItems: 'center',
-            width: "100%"
+           
         }}  >
-        <Grid item xs={12} sm={6} md={3} display='flex'>
-        {/* container spacing={2} padding={3} columns={10} */}
+
+
+        <Grid container   
+        height= '25vh' 
+        border= 'dotted' 
+        spacing={1} xs={4} sm={8} md={12} 
+        display='flex'
+        >
+        
+        <Grid item xs={2}>
             <Avatar 
             alt="Preston Caviar" 
             src="https://drive.google.com/thumbnail?id=13KwQ6M3XYhdyBAeQ7q5cAqrxGri44Am5"
@@ -35,6 +46,9 @@ export function Characters() {
             }}
             onClick={()=> selectCharacter(characters['Preston']['bgimg'])}
              />
+             </Grid>
+
+                <Grid item xs={2}>
             <Avatar 
             alt="Mewnice Whiskerly" 
             src="https://drive.google.com/thumbnail?id=1cLhI4Fy8wmkXAwQnPQzA49dq3myWSn7F"
@@ -44,8 +58,11 @@ export function Characters() {
                     transition: "transform 0.15s ease-in-out"
                     }
             }}
-            onClick={()=> selectCharacter(characters['October']['bgimg'])}
+            onClick={()=> selectCharacter(characters['Mewnice'])}
              />
+                </Grid>
+
+                <Grid item xs={2}>
             <Avatar 
             alt="OctoberTengu" 
             src="https://drive.google.com/thumbnail?id=17bXwup_8wt85n_cys7Hsn9d_SVta2mFw"
@@ -55,8 +72,11 @@ export function Characters() {
                     transition: "transform 0.15s ease-in-out"
                     }
             }}
-            onClick={()=> selectCharacter(characters['October'])}
+            onClick={()=> selectCharacter(characters['October']['bgimg'])}
              />
+                </Grid>
+
+                <Grid item xs={2}>
               <Avatar 
             alt="Rollo" 
             src="https://drive.google.com/thumbnail?id=1zaoNL7h_1oNexoBuQTUdyUty1QioYYHa"
@@ -66,7 +86,11 @@ export function Characters() {
                     transition: "transform 0.15s ease-in-out"
                     }
             }}
+            onClick={()=> selectCharacter(characters['Rollo'])}
              />
+                </Grid>
+
+                <Grid item xs={2}>
             <Avatar 
             alt="Tabitha" 
             src="https://drive.google.com/thumbnail?id=10LrRJTlxxOfQ_Vdl62nppqltlY8sdFij"
@@ -76,7 +100,11 @@ export function Characters() {
                     transition: "transform 0.15s ease-in-out"
                     }
             }}
+            onClick={()=> selectCharacter(characters['Tabitha'])}
              />
+                </Grid>
+
+                <Grid item xs={2}>
             <Avatar 
             alt="Suplex" 
             src="https://drive.google.com/thumbnail?id=14QiH9Y5FSqX22Am74XNOh2PatBsS_3Tj"
@@ -86,14 +114,18 @@ export function Characters() {
                     transition: "transform 0.15s ease-in-out"
                     }
             }}
+            onClick={()=> selectCharacter(characters['Suplex'])}
              />
+             </Grid>
 
         </Grid>
+
+
+
         </Box>
-        <Box
+        <Container
+       
       sx={{
-        width: 1100,
-        height: 1100,
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
@@ -101,14 +133,12 @@ export function Characters() {
         '&:hover': {
           backgroundColor: 'primary.main',
           opacity: [0.9, 0.8, 0.7],
+          
         },
       }}
-    >{character}</Box>
+    >{character}</Container>
             </section>
             </div>
     )
 }
 
-function showCharacter(name){
-    
-}

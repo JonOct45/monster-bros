@@ -1,5 +1,13 @@
 import { Avatar } from "@mui/material";
+import React from "react";
 export const characters = {
+    'GroupPhoto': <img
+    alt="GroupPhoto"
+    height='500px'
+    width='500px'
+    src="https://drive.google.com/thumbnail?id=1FbwdZ_SFZqjbekvfk9WwzPp9R1voMqkU"
+    sx={{}}/>,
+
     'Preston': {
         'bgimg': 
                     <img
@@ -40,7 +48,7 @@ export const characters = {
      resizeMode='contain'  
      src="https://drive.google.com/thumbnail?id=18WyYy2V5hAqj50zjwS6r5WAxLd4bnD1R"
      sx={{}}/>, 
-
+     
      'Mewnice': <img 
      alt="MewniceWhiskerly" 
      resizeMode='contain'  

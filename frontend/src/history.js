@@ -2,6 +2,9 @@ import "./css/history.css"
 import Button from '@mui/material/Button';
 import ButtonGroup from '@mui/material/ButtonGroup';
 import Box from '@mui/material/Box';
+import React from 'react';
+
+
 
 
 const buttons = [
@@ -23,7 +26,7 @@ export function History() {
     return (
 
   
-      <Box
+      <Box id='history'
        
         
         sx={{
@@ -35,7 +38,7 @@ export function History() {
             m: 1,
           },
         }}
-      > {buttons[0]}
+      > 
         <Box
             display='flex'
             alignItems='center'
@@ -67,7 +70,6 @@ export function History() {
                 width: 1000,
                 backgroundColor:'purple'
             }}>
-                <img src="https://drive.google.com/thumbnail?id=1z_cb46QKRUhMXyeizd9N5zspsOPWUR0v"/>
             
         </Box>
       </Box>

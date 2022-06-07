@@ -1,17 +1,31 @@
 import React from 'react';
-import {ResponsiveAppBar}from './navigation';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import ResponsiveAppBar from './navigation';
 import {History} from './history';
 import { Characters } from './characters';
-import { Locations } from './locations';
+
 
 function App() {
   return (
     
     <div className="App">
       <ResponsiveAppBar />
-     <History />
-      <Characters />
-      <Locations />
+      <BrowserRouter>
+      <Routes>  
+     
+
+        <Route path="/history" element={<History />}>
+        </Route>
+
+        <Route path="/characters" element={<Characters />}>
+          
+        </Route>
+      </Routes>
+      
+      </BrowserRouter>
+     
+      
+      
        
       
        

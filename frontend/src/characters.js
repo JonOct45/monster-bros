@@ -3,7 +3,7 @@ import React from 'react';
 import Avatar from '@mui/material/Avatar';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
-import { useState, useEffect } from 'react';
+import { useState} from 'react';
 import { Container } from '@mui/material';
 
 import "./css/characters.css";
@@ -128,7 +128,6 @@ export function Characters() {
       sx={{
         display: 'flex',
         alignItems: 'center',
-        justifyContent: 'center',
         backgroundColor: 'primary.dark',
         '&:hover': {
           backgroundColor: 'primary.main',

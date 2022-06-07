@@ -7,7 +7,12 @@ import React from 'react';
 
 
 
-const buttons = [
+
+
+
+export function History() {
+  
+  const buttons = [
     <Button size='large'>Welcome to Eos!</Button>,
     <Button size='small'>Genesis</Button>,
     <Button size='small'>Prime Material</Button>,
@@ -20,20 +25,13 @@ const buttons = [
     <Button size='small'>Age of Discovery</Button>,
 
   ];
-
-
-export function History() {
     return (
 
   
       <Box id='history'
-       
-        
         sx={{
           display: 'flex',
           padding: 10,
-        
-         
           '& > *': {
             m: 1,
           },
@@ -76,3 +74,4 @@ export function History() {
    
     );
   }
+

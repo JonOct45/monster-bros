@@ -1,4 +1,5 @@
 import "./css/locations.css";
+import React from 'react';
 export function Locations() {
     return (
         <div className="locations">

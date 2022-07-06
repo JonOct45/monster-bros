@@ -3,6 +3,7 @@ import Button from '@mui/material/Button';
 import ButtonGroup from '@mui/material/ButtonGroup';
 import Box from '@mui/material/Box';
 import React from 'react';
+import {atom} from './historytext.js';
 
 
 
@@ -13,8 +14,8 @@ import React from 'react';
 export function History() {
   
   const buttons = [
-    <Button size='large'>Welcome to Eos!</Button>,
-    <Button size='small'>Genesis</Button>,
+    <Button key= 'w2e' size='large'>Welcome to Eos!</Button>,
+    <Button key='genesis' size='small'>Genesis</Button>,
     <Button size='small'>Prime Material</Button>,
     <Button size='large'>History of Eos</Button>,
     <Button size='small'>Age of Genesis</Button>,
@@ -51,7 +52,7 @@ export function History() {
         <ButtonGroup
         
             display='flex'
-            flexDirection='column'
+           // flexDirection='column'
             orientation="vertical"
             aria-label="vertical contained button group"   
             variant='text' 
@@ -68,6 +69,7 @@ export function History() {
                 width: 1000,
                 backgroundColor:'purple'
             }}>
+              {atom}
             
         </Box>
       </Box>
